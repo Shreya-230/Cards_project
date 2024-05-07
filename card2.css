@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    /* CSS GRADIENT */
+    background: #E6DADA;  
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  
+     background: linear-gradient(to right, #274046, #E6DADA); 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:400px;
+    height:600px;
+    background-color: azure;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   align-content: space-between;
+}
+
+.card img{
+    height:200px;
+    width:400px;
+    /* This border-radius fixation done by me ...HEEEE */
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.textbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    width:75%;
+    text-align: center;
+    align-content: space-around;
+}
+
+.amountBox{
+    margin:2px;
+    width:85%;
+    height:10%;
+    background-color:skyblue;
+    border-radius: 6px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+    padding-left: 20px ;
+}
+
+/* Now dealing with two boxes of amountbox which are left box and rightbox */
+.leftbox{
+    /* width:fit-content; */
+    height:100%;
+    display: flex;
+    gap:15px;
+}
+.imgbox img{
+    height:55px;
+    width:60px;
+    border-radius: 50%;
+}
+
+/* button */
+#payment{
+    margin:6px;
+    width:85%;
+    height:9%;
+    background-color: rgb(8, 8, 108);
+    color:white;
+    text-align: center;
+    border-radius:10px ;
+    font-size: 18px;
+    /* Shadow from material design Box shadow */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.cancelbox{
+    margin:20px;
+}
+.cancelbox a{
+   
+    text-decoration: none;
+    /* Taki underline remove ho jae */
+    color:darkslategrey;
+    font-weight: bold;
+    font-size: 18px;
+}
